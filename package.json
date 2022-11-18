@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/src/index.js",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "test": ""
   },
   "author": "Luis Miguel",
@@ -13,7 +15,12 @@
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.11.9",
-    "typescript": "^4.8.4"
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "eslint-plugin-react": "^7.31.10",
+    "typescript": "^4.8.4",
+    "typescript-eslint": "^0.0.1-alpha.0"
   },
   "dependencies": {
     "module-alias": "^2.2.2"
